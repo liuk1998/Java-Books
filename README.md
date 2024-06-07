@@ -39,5 +39,6 @@ public class HelloWorld {
     System.out.println('a' + 1); // 先将char类型的'a'转化为int变成97, 再加1, 结果是98.
     char c = 'a' + 1;
     System.out.println(c); // 先算出相加的值为98, 然后将值赋给char类型的c, 因为是char类型, 所以会将98转化为'b', 最终结果为'b'.
+  }
 }
 ```
