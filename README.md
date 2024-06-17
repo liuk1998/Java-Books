@@ -42,3 +42,16 @@ public class HelloWorld {
   }
 }
 ```
+### 8.方法.
+```
+public class MethodsTest {
+  // 入口
+  public static void main(String[] args) {
+    int sum = sunNum(1, 2)
+  }
+
+  public static int sumNum(int x, int y) {
+     return x + y
+  }
+}
+```
