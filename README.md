@@ -42,16 +42,31 @@ public class HelloWorld {
   }
 }
 ```
-### 8.方法.
+### 8.equals方法与 “==” 有何区别 ?
 ```
+都可以用于比较两个对象, 区别在于: == 运算符用于比较两个对象的引用, 如果它们指向的是同一个对象, 则返回true. equals方法用于比较两个对象的内容是否相等, 当它们的内容相等时, 则返回true.
+例: 判断用户名和密码正不正确
 public class MethodsTest {
   // 入口
   public static void main(String[] args) {
-    int sum = sunNum(1, 2)
+    login();
   }
-
-  public static int sumNum(int x, int y) {
-     return x + y
+  // 登录
+  public static void login() {
+    // Java 提供的一个工具类, 可以通过 Scanner 类来获取用户的输入, 通过 next() 与 nextLine() 方法获取输入的字符串.
+    java.util.Scanner = new java.util.Scanner(Syatem.in);
+    String username = scanner.next();
+    String password = scanner.next();
+    boolean isOk = check(username, password);
+    if (isOk) {
+      System.out.println('登陆成功');
+    } else {
+      System.out.println('登陆失败');
+    }
+  }
+  // 检查用户名和密码是否正确
+  public static boolean check(String username, String password) {
+    return username.equals('admin') && password.equals('abc123')
   }
 }
 ```
