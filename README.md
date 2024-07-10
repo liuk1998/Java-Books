@@ -89,3 +89,7 @@ public class MethodsTest {
 复制一行: ctrl + d
 快速生成变量: 值.var
 ```
+### 11.类的基础.
+```
+
+```
